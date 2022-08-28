@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* navbar */
+.navbar {
+    @apply flex flex-row items-center justify-between fixed top-0 w-full z-10 h-[5.4rem] p-[3.2rem];
+}
+
+.nav-links{
+    @apply text-2xl font-semibold text-[#181b21] mx-[0.8rem] px-[0.8rem] py-[0.4rem] rounded-[0.8rem] bg-transparent hover:bg-gray-200 transition-all duration-300;
+}
+
+.ext-links {
+    @apply hidden lg:block;
+}
+
+/* image section */
+
+.transform-50 {
+    translate: -50% -50%;
+}
+
+/* sections */
+
+.section-main {
+    @apply w-full h-screen relative;
+}
+
+.section-image {
+    @apply w-full h-full;
+}
+
+.section-details {
+    @apply absolute top-[20%] left-[50%] text-center transform-50;
+}
+
+.model-name {
+    @apply text-[4rem] text-[#393c41] font-semibold;
+}
+
+.section-para {
+    @apply text-[#4c4d50] text-2xl;
+}
+
+.button-div {
+    @apply absolute top-[85%] left-[50%] transform-50 flex flex-col md:flex-row;
+}
+
+.button-style {
+    @apply text-2xl mx-3 font-medium uppercase my-2 py-[0.4rem] px-[2.4rem] rounded-[3.2rem] w-[25.5rem] h-16 bg-opacity-80;
+}
+
+.down-arrow {
+    @apply block w-full h-20 mx-auto absolute top-[93%] animate-bounce;
+}
